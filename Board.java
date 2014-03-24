@@ -1,9 +1,9 @@
 public class Board
 {
-//this is a change
+
 	private static int board[][];
-	private final BOARD_WIDTH = 8;
-	private final BOARD_HEIGHT = 8;
+	private final int BOARD_WIDTH = 8;
+	private final int BOARD_HEIGHT = 8;
 	private final int RED = 1;
 	private final int BLACK = -1;
 	private final int EMPTY = 0;
@@ -29,7 +29,7 @@ public class Board
 		}
 	}
 
-	public void validMove(int row, int column, int new_row, int new_column)
+	public boolean validMove(int row, int column, int new_row, int new_column)
 	{
 		if(row+1 == new_row && column+1 == new_column && new_row < BOARD_WIDTH && new_column < BOARD_HEIGHT)
 		{
@@ -40,6 +40,6 @@ public class Board
 			return false;
 		}
 	}
-}
-=======
+
+
 }
