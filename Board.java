@@ -1,5 +1,6 @@
 public class Board
 {
+//this is a change
 	private static int board[][];
 	private final BOARD_WIDTH = 8;
 	private final BOARD_HEIGHT = 8;
@@ -39,4 +40,6 @@ public class Board
 			return false;
 		}
 	}
+}
+=======
 }
