@@ -17,4 +17,26 @@ public class Board
 			}
 		}
 	}
+
+	public void movePiece(int piece, int row, int column, int new_row, int new_column)
+	{
+		if(validMove(row, column, new_row,new_column))
+		{
+			board[new_row][new_column] = piece;
+		}else{
+			System.out.println("Invalid move");
+		}
+	}
+
+	public void validMove(int row, int column, int new_row, int new_column)
+	{
+		if(row+1 == new_row && column+1 == new_column && new_row < BOARD_WIDTH && new_column < BOARD_HEIGHT)
+		{
+			return true;
+		}else if(row+1 == new_row && column-1 == new_column && new_row < BOARD_HEIGHT && new_column > 0){
+			return true;
+		}else{
+			return false;
+		}
+	}
 }
