@@ -1,5 +1,5 @@
 
-//This is our mainl class
+//This is our main class
 
 public class main{
 	public static void main(String args[]){
