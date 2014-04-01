@@ -1,0 +1,10 @@
+1) Create GUI for gameboard that will consist of tiles
+2) Create Tile class that will have the properties of:
+	-colour (string)
+	-occupied (boolean)
+	-maybe something else
+3) Create basicPiece class
+4) Create kingPiece class
+5) Define rules of movement and jumping
+6) Define turn based rules in main class
+
